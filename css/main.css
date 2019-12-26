@@ -3,29 +3,60 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: #5300B0;
+    background-color: #4D0E8D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-nav ul, footer ul {
+#divider {
+    margin: 100px 50px 0px 200px;
+    height: 300px;
+    width: 10px;
+    background-color: white;
+}
+nav {
+    margin: 100px 0px 0px 0px;
+    width: 600px;
+    height: 500px;
+   
+}
+nav ul {
     font-family: 'Frank Ruhl Libre', serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-nav ul li, footer ul li {
+nav ul li{
+    padding: 5px 5px 5px 5px;
     display: inline;
     margin-right: 20px;
+}
+
+i {
+    padding: 5px 5px 5px 5px;
 }
 a {
     text-decoration: none;
     color: #EEE0FC;
     font-size:1.5em;
+    
     font-family: 'Frank Ruhl Libre', serif;
 }
 a:hover {
     text-decoration: underline;
 }
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
 h1 {
-    font-size: 5em;
+    font-size: 6em;
     font-family: 'Frank Ruhl Libre', serif;
     color: #FFFFFF;
 }
@@ -37,11 +68,5 @@ p {
 }
 
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
 
-ul.posts li {
-    list-style: none;
-}
+
