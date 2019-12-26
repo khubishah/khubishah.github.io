@@ -12,7 +12,7 @@ body {
     margin: 100px 50px 0px 200px;
     height: 570px;
     width: 3px;
-    background-color: white;
+    background-color: #C0F1FC;
 }
 nav {
     margin: 100px 0px 0px 0px;
@@ -40,7 +40,7 @@ i {
 }
 a {
     text-decoration: none;
-    color: #EEE0FC;
+    color: #E9DCF7;
     font-size:1.5em;
     
     font-family: 'Frank Ruhl Libre', serif;
@@ -59,13 +59,13 @@ h1 {
     font-size: 6em;
     margin: 125px 0px 0px 0px;
     font-family: 'Frank Ruhl Libre', serif;
-    color: #FFFFFF;
+    color: #C0F1FC;
 }
 p {
     margin: 20px 0px 0px 0px;
     font-size: 1.1em;
     line-height: 1.5em;
-    color: #EEE0FC;
+    color: #E9DCF7;
     font-family: 'Frank Ruhl Libre', serif;
 }
 
