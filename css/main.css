@@ -10,8 +10,8 @@ body {
 }
 #divider {
     margin: 100px 50px 0px 200px;
-    height: 300px;
-    width: 10px;
+    height: 550px;
+    width: 3px;
     background-color: white;
 }
 nav {
@@ -30,7 +30,7 @@ nav ul {
     justify-content: space-evenly;
 }
 nav ul li{
-    padding: 5px 5px 5px 5px;
+    padding: 40px 5px 5px 5px;
     display: inline;
     margin-right: 20px;
 }
@@ -56,17 +56,27 @@ a:hover {
 
 }
 h1 {
-    font-size: 6em;
+    font-size: 8em;
+    margin: 125px 0px 0px 0px;
     font-family: 'Frank Ruhl Libre', serif;
     color: #FFFFFF;
 }
 p {
-    font-size: 1.5em;
+    margin: 20px 0px 0px 0px;
+    font-size: 1.1em;
     line-height: 1.5em;
     color: #EEE0FC;
     font-family: 'Frank Ruhl Libre', serif;
 }
 
+
+#climax {
+margin: 20px 0px 0px 0px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #EEE0FC;
+    font-family: 'Frank Ruhl Libre', serif;
+}
 
 
 
