@@ -1,9 +1,9 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: #5300B0;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -17,24 +17,25 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #EEE0FC;
+    font-size:1em;
+    font-family: 'Frank Ruhl Libre', serif;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 5em;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #FFFFFF;
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: #EEE0FC;
+    font-family: 'Frank Ruhl Libre', serif;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
+
 
 ul.posts { 
     margin: 20px auto 40px; 
