@@ -18,7 +18,7 @@ nav ul li, footer ul li {
 a {
     text-decoration: none;
     color: #EEE0FC;
-    font-size:1em;
+    font-size:1.5em;
     font-family: 'Frank Ruhl Libre', serif;
 }
 a:hover {
@@ -31,7 +31,7 @@ h1 {
 }
 p {
     font-size: 1.5em;
-    line-height: 1.4em;
+    line-height: 1.5em;
     color: #EEE0FC;
     font-family: 'Frank Ruhl Libre', serif;
 }
