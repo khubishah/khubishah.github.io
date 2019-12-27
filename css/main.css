@@ -42,12 +42,12 @@ body {
   }
 
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #FAD4F3;
     color: black;
   }
   
   .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #950073;;
     color: white;
   }
 
@@ -60,6 +60,9 @@ body {
     font-size: 40px;
 }
 
+
+  
+ 
 
 /* Header Design */
 #header {
@@ -105,10 +108,15 @@ body {
     text-transform: uppercase;
     color: white;
     background-color: #950073;
-    padding: 25px 25px 25px 25px;
-    border-radius: 50px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
 }
 
+
+.header_menu_class:hover {
+    color: black;
+    background: #FAD4F3;
+}
 /*About Section */
 
 
