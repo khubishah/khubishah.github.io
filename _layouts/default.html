@@ -3,6 +3,7 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<script src="https://kit.fontawesome.com/a65c34d223.js" crossorigin="anonymous"></script>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta charset="UTF-8">
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -10,26 +11,121 @@
 			<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 		</head>
 		<body>
-			<div class="bio">
-				<h1>Khubi Shah</h1>
-				<p>Hey there! My name is Khubi, and I'm studying Computer Science at the University of Waterloo.</p>
-				<p>In my free time, I enjoy tinkering around with new technologies and tools to build little projects for both my personal enrichment, and for solving whatever little everyday problems that I can (feel free to check them out on my GitHub!).</p>
-				<p>I am currently working on a data visualizer tool that helps visualize all sorts of UN and UNICEF world statistics using D3.JS.</p>
-				<p>When I'm not working on anything techie, some of my favorite things to do are playing the piano, hitting the gym, and playing a game of badminton with friends!</p>
-				<p>Currently seeking Summer 2020 internships! Previously interned at <a id="climax" href="https://climaxmedia.com/">@ClimaxMedia</a>.</p>
-			</div>
-			<div id="divider"></div>
-			<nav>
-	    		<ul>
-	        		<li><a href=""><i class="far fa-file"></i>Resume</a></li>
-		        	<li><a href="https://ca.linkedin.com/in/khubi-shah"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
-	        		<li><a href="https://github.com/khubishah"><i class="fab fa-github"></i>GitHub</a></li>
-	        		<li><a href=""><i class="fas fa-briefcase"></i>Experience</a></li>
-					<li><a href=""><i class="fas fa-project-diagram"></i>Projects</a></li>
-					<li><a href="mailto:khubi.shah@outlook.com"><i class="far fa-envelope"></i>Contact</a></li>
-	    		</ul>
-			</nav>
 			
+			<div class="topnav">
+				<h1 class="name">Khubi Shah</h1>
+				<nav class="nav menu">
+					<ul id="menu-main" class="nav">
+						<li><a title="about" href="#about">About</a></li>
+						<li><a title="skills" href="#skills">Skills</a></li>
+						<li><a title="projects" href="#projects">Projects</a></li>
+						<li><a title="experience" href="#experience">Experience</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<section id="header" class="header_section">
+				<header>
+					<h3 id="header_title"><i>Hi! I'm</i></h3>
+					<h2 id="header_name">Khubi Shah</h2>
+					<ul id="header_menu">
+							<li><a class="header_menu_class" href="">ResumÉ. Click Me!</a></li>	
+					</ul>
+
+				</header>
+
+			</section>
+			<section id="about" class="about_section">
+				<h3 class = "section_title">About Me</h3>
+				<p class = "section_para">Hey! Nice to meet you. I'm a 2B Computer Science student at the University of Waterloo.</p>
+				<div class = "hobbies_row">
+					<div class = "hobby">
+						<img class="hobby_icons" src="/img/piano.jpg" alt="" />
+						<h2 class = "hobby_names">Piano</h2>
+						<p class = "hobby_para">I've been playing for 12 years!</p>
+					</div>
+					<div class = "hobby">
+							<img class="hobby_icons" src="/img/badminton.jpg" alt="" />
+							<h2 class = "hobby_names">Badminton</h2>
+							<p class = "hobby_para">The best workout ever!</p>
+					</div>
+					<div class = "hobby">
+							<img class="hobby_icons" src="/img/dancing.jpg" alt="" />
+							<h2 class = "hobby_names">Dancing</h2>
+							<p class = "hobby_para">Even at the most inappropriate times!</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="skills" class="skills_section">
+				<h3 class = "section_title">Skills</h3>
+				<p class = "section_para"><u>Programming Languages:</u> C++, JavaScript, HTML, CSS, C, Java, Scheme, Python</p>
+				<p class = "section_para"><u>Tools and Technologies:</u> Git, Bash, D3.js, Node.js, AWS, React.js, JQuery</p>
+				<p class = "section_para"><u>Languages:</u> English, French, Hindi, Gujarati</p>
+			</section>
+
+			
+			<section id="projects">
+				<h3 class = "section_title">Projects</h3>
+				<p class = "section_para"><i>Here are some of my favorite projects!</i></p>
+				<div class="the_projects">
+					<div class = "project">
+						<h4 class="project_names">Biquadris</h4>
+						<img class="project_images" src="/img/project-management.jpg" alt="" />
+						<p class="section_para">some information about this project</p>
+					</div>
+					<div class = "project">
+						<h4 class="project_names">TaskTracker</h4>
+						<img class="project_images" src="/img/project-management.jpg" alt="" />
+						<p class="section_para">some information about this project</p>
+						
+					</div>
+					<div class = "project">
+						<h4 class="project_names">Budgety</h4>
+						<img class="project_images" src="/img/project-management.jpg" alt="" />
+						<p class="section_para">some information about this project. </p>
+					</div>
+					<div class = "project">
+							<h4 class="project_names">UNICEF Data Visualization</h4>
+							<img class="project_images" src="/img/project-management.jpg" alt="" />
+							<p class="section_para">some information about this project. </p>
+					</div>
+					
+				</div>
+
+				<p class="section_para"><br><br><i>To see all my projects on GitHub, click <a href="https://github.com/khubishah">here!</a></i></p>
+
+			</section>
+			<section id="experience" class="experience_section">
+				<h3 class = "section_title">Work and Volunteer Experience</h3>
+				<div class="job_list">
+					<div class="job">
+						<h4 class="project_names">Job title 1</h4>
+						<p class = "section_para">Bullet points/description</p>
+					</div>
+					<div class="job">
+						<h4 class="project_names">Job title 2</h4>
+						<p class = "section_para">Bullet points/description</p>
+					</div>
+					<div class="job">
+						<h4 class="project_names">Job title 2</h4>
+						<p class = "section_para">Bullet points/description</p>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<p class="footer_para">
+					Copyright © Khubi Shah 2020
+				</p>
+				<ul class="footer_ul">
+					<li><a href="https://github.com/khubishah"><img class="footer_icons" src="/img/github.jpg" alt="" /></a></li>
+					<li><a href="mailto:khubi.shah@outlook.com"><img class="footer_icons" src="/img/email.jpg" alt="" /></a></li>
+					<li><a href="https://ca.linkedin.com/in/khubi-shah"><img class="footer_icons" src="/img/linkedin-logo.jpg" alt="" /></a></li>
+					
+				</ul>
+				
+			</footer>
+
 			
 		
 		</body>
