@@ -12,10 +12,10 @@
 		</head>
 		<body>
 			
-			<div class="topnav" id="navbar">
+			<div id="navbar" class="topnav">
 				<h1 class="name">Khubi Shah</h1>
-				<nav class="nav menu">
-					<ul id="menu-main" class="nav">
+				<nav class="nav">
+					<ul >
 						<li><a title="about" href="#about">About</a></li>
 						<li><a title="skills" href="#skills">Skills</a></li>
 						<li><a title="projects" href="#projects">Projects</a></li>
@@ -24,7 +24,7 @@
 				</nav>
 			</div>
 
-
+			<div class="content">
 
 			<section id="header" class="header_section">
 				<header>
@@ -33,10 +33,9 @@
 					<ul id="header_menu">
 							<li><a class="header_menu_class" href="">ResumÉ. Click Me!</a></li>	
 					</ul>
-
 				</header>
-
 			</section>
+
 			<section id="about" class="about_section">
 				<h3 class = "section_title">About Me</h3>
 				<p class = "section_para">Hey! Nice to meet you. I'm a 2B Computer Science student at the University of Waterloo.</p>
@@ -92,12 +91,10 @@
 							<img class="project_images" src="/img/project-management.jpg" alt="" />
 							<p class="section_para">some information about this project. </p>
 					</div>
-					
 				</div>
-
 				<p class="section_para"><br><br><i>To see all my projects on GitHub, click <a href="https://github.com/khubishah">here!</a></i></p>
-
 			</section>
+
 			<section id="experience" class="experience_section">
 				<h3 class = "section_title">Work and Volunteer Experience</h3>
 				<div class="job_list">
@@ -115,6 +112,7 @@
 					</div>
 				</div>
 			</section>
+
 			<footer>
 				<p class="footer_para">
 					Copyright © Khubi Shah 2020
@@ -127,10 +125,23 @@
 				</ul>
 				
 			</footer>
-
+		</div>
 			
 
+		<script>
+			window.onscroll = function() { myFunction()};
 			
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+			
+			function myFunction() {
+			  if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			  } else {
+				navbar.classList.remove("sticky");
+			  }
+			}
+		</script>
 		
 		</body>
 	</html>

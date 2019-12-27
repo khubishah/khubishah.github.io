@@ -13,9 +13,14 @@ body {
     flex-direction: column;
   }
 
+  .content {
+      display: flex;
+      flex-direction: column;
+    
+  }
   /* Nav Design */
 
-  .topnav {
+  #navbar {
     overflow: hidden;
     background-color: black;
     display: flex;
@@ -23,7 +28,7 @@ body {
     justify-content: space-between;
   }
 
-  .topnav ul {
+  .nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -41,25 +46,34 @@ body {
     
   }
 
-  .topnav a:hover {
+  .nav a:hover {
     background-color: #FAD4F3;
     color: black;
   }
   
-  .topnav a.active {
+  .nav a.active {
     background-color: #950073;;
     color: white;
   }
 
-.topnav .name {
+#navbar .name {
 
     text-decoration: none;
     color: #FAD4F3;
     font-family: 'Kaushan Script', cursive;
-    margin: 10px 0px 20px 40px;
+    margin: 10px 0px 20px 50px;
     font-size: 40px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
 
   
  
@@ -102,13 +116,13 @@ body {
 }
 
 .header_menu_class {
-    font-size: 30px;
+    font-size: 28px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: white;
     background-color: #950073;
-    padding: 30px 30px 30px 30px;
+    padding: 25px 25px 25px 25px;
     border-radius: 10px;
 }
 
