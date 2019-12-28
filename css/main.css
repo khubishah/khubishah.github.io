@@ -69,7 +69,7 @@ body {
   }
   
 
-#navbar .name {
+#signature {
 
     text-decoration: none;
     color: #FAD4F3;
@@ -78,9 +78,7 @@ body {
     font-size: 40px;
     opacity:0;  /* make things invisible upon start */
     animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-
     animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-
     animation-duration:1s;
     animation-delay: 0.2s
 }
@@ -88,11 +86,11 @@ body {
 .sticky {
     position: fixed;
     width: 100%;
-  }
+}
   
-  .sticky + .content {
+.sticky + .content {
     padding-top: 60px;
-  }
+}
 
   
  
@@ -105,6 +103,15 @@ body {
     padding: 100px 0px 100px 0px;
     flex-direction: column;
     justify-content: flex-start;
+    
+}
+
+header {
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    animation-duration:1s;
+    animation-delay: 0.2s;
 }
 
 #header_title {
@@ -130,14 +137,17 @@ body {
     
 }
 
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { 
+    from { opacity:0; } 
+    to { opacity:1; } 
+}
 
 
 
 #header_menu {
     list-style: none;
     text-align: center;
-    margin: 70px 0px 0px 0px;
+    margin: 70px 0px 70px 0px;
     
 }
 
@@ -160,6 +170,8 @@ body {
     background: #FAD4F3;
     padding: 28px 28px 28px 28px;
 }
+
+
 /*About Section */
 
 
