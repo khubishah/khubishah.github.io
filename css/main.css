@@ -9,52 +9,63 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    
+    width: 100%;
+    height: 100%;
   }
 
  
   .content {
       display: flex;
       flex-direction: column;
+      justify-content: center;
     
   }
+
+  /* Dropdown */
+  .dropdown-content {
+      display: none;
+  }
+
+  .dropbtn {
+      display: none;
+  }
+  
+
+    .show {
+        display:block;
+    }
+
+
   /* Nav Design */
 
   #navbar {
     overflow: hidden;
     background-color: black;
-    
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: space-evenly;
+    padding: 10px 0px 0px 0px;
   }
 
-  .nav {
-    margin: 20px 0px 0px 500px;
-    
-  }
+  
+
+
+
   .nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    opacity:0;  /* make things invisible upon start */
-    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-
-    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-
-    animation-duration:1s;
-    animation-delay: 0.2s
+    justify-content: flex-end;
+  
   }
 
   .nav a {
-    margin: 50px 0px 0px 0px;
+    
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     font-size: 15px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -63,24 +74,24 @@ body {
   }
 
   .nav a:hover {
-    color: white;
-    background-color:#950073;
-    border-radius: 10px;
+    color: #FAD4F3;
+    transition: color 0.7s ease-out;
   }
   
-
+.name {
+    margin: 0px 0px 0px 0px;
+}
 #signature {
-
     text-decoration: none;
     color: #FAD4F3;
     font-family: 'Kaushan Script', cursive;
-    margin: 10px 0px 20px 50px;
     font-size: 40px;
-    opacity:0;  /* make things invisible upon start */
-    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    animation-duration:1s;
-    animation-delay: 0.2s
+    
+    /*opacity:0;  /* make things invisible upon start */
+    /*animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    /*animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    /*animation-duration:1s;*/
+    /*animation-delay: 0.2s*/
 }
 
 .sticky {
@@ -89,7 +100,7 @@ body {
 }
   
 .sticky + .content {
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
   
@@ -102,17 +113,11 @@ body {
     display: flex;
     padding: 100px 0px 100px 0px;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     
 }
 
-header {
-    opacity:0;  /* make things invisible upon start */
-    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    animation-duration:1s;
-    animation-delay: 0.2s;
-}
+
 
 #header_title {
     color: white;
@@ -132,7 +137,7 @@ header {
     font-size: 110px;
     text-align: center;
     padding: 0px 0px 0px 0px; 
-    margin: 20px;
+    margin: 20px 0px 0px 0px;
 
     
 }
@@ -160,6 +165,7 @@ header {
     color: white;
     background-color: #950073;
     padding: 25px 25px 25px 25px;
+    
     border-radius: 10px;
 
 }
@@ -168,6 +174,8 @@ header {
 .header_menu_class:hover {
     color: black;
     background: #FAD4F3;
+    transition: background 0.8s ease-out;
+    
     padding: 28px 28px 28px 28px;
 }
 
@@ -178,7 +186,6 @@ header {
 
 #about {
     background-color: white;
-    margin: 0;
     display: flex;
     padding: 50px 0px 100px 0px;
     flex-direction: column;
@@ -203,12 +210,14 @@ header {
     padding: 50px 0px 0px 0px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     
 }
 
 .hobby {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    padding: 0px 5px 0px 0px;
 }
 
 .hobby_icons {
@@ -221,7 +230,6 @@ header {
 
 #skills {
     background-color: #EAE3EA;
-    margin: 0;
     padding: 50px 0px 100px 0px;
     line-height: 50px;
     
@@ -234,11 +242,11 @@ header {
 
 #projects {
     background-color: white;
-    margin: 0;
     padding: 50px 0px 75px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    
 }
 
 .project_names {
@@ -249,12 +257,18 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     text-align: center;
+   
 }
+.project {
+    padding: 0px 10px 0px 10px;
 
+}
 .project_images {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
+    
     margin: 0px 0px 50px 0px;
 }
 
@@ -262,13 +276,13 @@ header {
 /*Experience*/
 #experience {
     background-color: #EAE3EA ;
-    margin: 0;
     padding: 40px 0px 75px 0px;
 }
 .job_list {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .job {
     margin: 0px 50px 0px 50px;
@@ -295,16 +309,109 @@ footer {
     justify-content: center;
 }
 .footer_icons {
-    margin: 0px 50px 0px 50px;
+    margin: 0px 50px 0px 0px;
     width: 50px;
     height: 50px;
-    opacity: 2;
+    opacity: 1;
 }
 
 
 
 #linkedin:hover, #github:hover, #email:hover {
     opacity: 0.7;
+    transition: opacity 0.3s ease-out;
 }
 
-  
+
+/* Media queries for Responsive Design */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .dropbtn {
+        display: block;
+        margin: 7px 0px 0px 0px;
+        color:  #FAD4F3;
+        font-size: 30px; 
+    }
+    .dropdown-content {
+        margin: 0px 0px 10px 0px;
+    }
+    
+    .dropdown-content a{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        line-height: 7px;
+        font-size: 13px;
+        text-align: left;
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        background-color: white ;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+   
+    .nav {
+        display: none;
+    }
+    
+    #header_menu {
+        margin: 70px 0px 70px 0px;
+        
+    }
+    
+    .header_menu_class {
+        font-size: 20px;
+
+    }
+
+    #header_title {
+        font-size: 35px;
+    
+    
+    }
+    
+    #header_name{
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 90px;
+        text-align: center;
+        padding: 0px 0px 0px 0px; 
+        margin: 20px 0px 0px 0px;
+    
+        
+    }
+
+    #signature {
+        font-size: 35px;
+        
+        /*opacity:0;  /* make things invisible upon start */
+        /*animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+        /*animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        /*animation-duration:1s;*/
+        /*animation-delay: 0.2s*/
+    }
+
+    
+      #navbar {
+          justify-content: space-around;
+      }
+    
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .dropdown {
+        display: none;
+    }
+}

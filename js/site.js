@@ -40,4 +40,7 @@ document.getElementById("experience_nav").addEventListener('click', function() {
     document.getElementById("projects_nav").style.color= "white";
 });
 
+/*
 
+  
+*/

@@ -13,15 +13,28 @@
 		<body>
 			
 			<div id="navbar" class="topnav">
-				<h1 class="name"><a id="signature" href="default.html">Khubi Shah</a></h1>
-				<nav class="nav">
+				<h1 class="name"><a id="signature" href="">Khubi Shah</a></h1>
+				<nav id="thenav" class="nav">
 					<ul >
 						<li><a id="about_nav" href="#about">About</a></li>
 						<li><a id="skills_nav" href="#skills">Skills</a></li>
 						<li><a id="projects_nav" href="#projects">Projects</a></li>
 						<li><a id="experience_nav" href="#experience">Experience</a></li>
+				
 					</ul>
 				</nav>
+				<div class="dropdown" >
+						<button id="menuIcon" class="dropbtn" onclick="dropDownFunc()">
+								<i class="fa fa-bars"></i>
+							</button>
+						<div class="dropdown-content" id="dropContent">
+							<a href="#about">About</a>
+							<a href="#skills">Skills</a>
+							<a href="#projects">Projects</a>
+							<a href="#experience">Experience</a>
+						</div>
+				</div>
+				
 			</div>
 
 			<div class="content">
@@ -156,7 +169,22 @@
 				} // End if
 			});
 			});
+
+			/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+			function dropDownFunc() {
+				document.getElementById("dropContent").classList.toggle("show");
+			}
+
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')) {
+					var myDropdown = document.getElementById("dropContent");
+					if (myDropdown.classList.contains('show')) {
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
 		</script>
+		
 		</body>
 	</html>
 	
