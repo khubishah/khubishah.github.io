@@ -267,16 +267,23 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
-.the_projects {
+
+.current_project {
+    margin: 0px 0px 100px 0px;
+}
+.the_projects, .current_project {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     text-align: center;
+    
    
 }
 .project {
     padding: 0px 10px 0px 10px;
+    width: 15%;
+
 
 }
 .project_images {
@@ -295,12 +302,15 @@ body {
 .job_list {
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .job {
     margin: 0px 50px 0px 50px;
     text-align: center;
+    width: 50%;
 }
 
 /*Footer */
@@ -341,7 +351,9 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    
+    .project{
+        width: 100%;
+    }
     .dropbtn {
         display: block;
         margin: 2px 0px 0px 0px;
@@ -414,7 +426,10 @@ footer {
       #navbar {
           justify-content: space-around;
       }
-    
+
+    .job {
+        width: 80%;
+    }
 
 }
 
@@ -429,5 +444,35 @@ footer {
 @media only screen and (min-width: 768px) {
     .dropdown {
         display: none;
+    }
+    .project {
+      
+        width: 50%;
+    
+    
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .dropdown {
+        display: none;
+    }
+    .project {
+      
+        width: 25%;
+    
+    
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .dropdown {
+        display: none;
+    }
+    .project {
+      
+        width: 60%;
+    
+    
     }
 }
