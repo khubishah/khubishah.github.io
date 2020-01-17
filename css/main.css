@@ -210,6 +210,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+#intro {
+    padding: 0px 175px 0px 175px;
+}
+
 .hobbies_row {
     padding: 50px 0px 0px 0px;
     display: flex;
@@ -274,6 +278,7 @@ body {
 
 .current_project {
     margin: 0px 0px 100px 0px;
+    padding: 0px 20px 20px 20px;
 }
 .the_projects, .current_project {
     display: flex;
@@ -291,6 +296,7 @@ body {
     border-radius: 20px;
     border-style: solid;
     border-width: 1px;
+    padding: 0px 20px 20px 20px;
 }
 .project_images {
     width: 100px;
@@ -317,6 +323,11 @@ body {
     margin: 0px 50px 0px 50px;
     text-align: center;
     width: 30%;
+}
+
+.job_image {
+    max-width: 100%;
+    height: auto;
 }
 
 /*Footer */
